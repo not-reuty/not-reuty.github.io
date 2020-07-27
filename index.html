@@ -2,92 +2,153 @@
 <html lang="en">
 
 <head>
-  <meta name="description" content="Webpage description goes here" />
-  <meta charset="utf-8">
-  <title>Reuty's Project Collection</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="description" content="Webpage description goes here" />
+	<meta charset="utf-8">
+	<title>Reuty's Project Collection</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+		body{
+			background-color: #fff2f2;
+		}
+		*{
+			font-family: 'Roboto';
+		}
+		hr{
+			border: 1px solid #f3f3f3;
+		}
+		h1, h2, h3, h4{
+			display: inline-block;
+			font-family: 'Open Sans';
+		}
+		div.container{
+			background-color: white;
+			border: 1px solid #e1e4e8;
+			border-radius: 10px;
+			margin: 0 auto;
+			margin-top: 50px;
+			margin-bottom: 300px;
+			max-width: 900px;
+			padding: 40px;
+			padding-top: 40px;
+		}
+		h1, h2{
+			margin-bottom: 0;
+			margin-top: 50px;
+		}
+		a{
+			text-decoration: none
+		}
+		p{
+			line-height: 24px
+		}
+		img{
+			max-width: 100%;
+			border: 2px solid #f3f3f3;
+			border-radius: 10px;
+		}
+		.quick_links{
+			text-align: center;
+			vertical-align: middle;
+		}
+		.quick_links a{
+			background-color: #eee;
+			padding: 6px 12px;
+			text-decoration: none;
+			border-radius: 4px;
+		}
+		i{
+			margin-left: 10px;
+			margin-right: 10px;
+		}
 
-  <style type="text/css">
-  	@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
-  	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-  	@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
- 
- 	body{
- 		background-color: #fff2f2;
- 	}
-  	*{
-  		font-family: 'Arial';
-  	}
-  	hr{
-  		border: 1px solid #f3f3f3;
-  	}
-  	h1, h2, h3, h4{
-  		font-family: 'Roboto Mono';
-  		background: #f3f3f3;
-  		display: inline-block;
-  	}
-  	div.container{
-  		background-color: white;
-  		border: 1px solid #e1e4e8;
-  		border-radius: 10px;
-  		margin: 0 auto;
-  		margin-top: 50px;
-  		margin-bottom: 300px;
-  		max-width: 800px;
-  		padding: 20px;
-  		padding-top: 40px;
-  	}
-  	h1, h2{
-  		margin-bottom: 0;
-  	}
-  	p{
-  		line-height: 22px
-  	}
-  	img{
-  		max-width: 100%;
-  		border: 2px solid #f3f3f3;
-  		border-radius: 10px;
-  	}
-  	div.links{
-  		text-align: center;
-  	}
-  	i{
-  		margin-left: 10px;
-  		margin-right: 10px;
-  	}
-  </style>
+		span.demobox{
+			display: inline-block;
+			min-height: 36px;
+			border: 1px solid blue;
+		}
+		.demo{
+			background-color: #eee;
+			border: 1px solid grey;
+			height: 100%
+		}
+		.demo span{
+			display: inline-block;
+			background-color: red;
+			min-height: 16px;
+			min-width: 16px;
+			border-radius: 8px;
+		}
+		.centered{
+			margin: 0 auto;
+		}
+	</style>
 </head>
 
 <body>
-  
+	
 <div class="container">
-  <h1>Reuty's Project Collection - Welcome!</h1>
-  <hr>
-  <p>This site is a collection of my projects so that people can check them out without having to clone the repository!</p>
+	<h1>Reuty's Project Collection - Welcome!</h1>
+	<hr>
+	<p>This site is a collection of my projects! Each one has links to its source code (hosted on github), plus a reddit post and tweet with answers to some common questions. Each project also has a wiki-style page which can be found in the readme file of its github repository.</p>
+
+	<div class="quick_links">
+		<p>Quick Links: 
+			<a href="#damage">Damage Lab</a>
+			<a href="#health">Health Lab</a>
+			<a>Jumpy</a>
+		</p>
+
+	</div>
+
+	<h2>About</h2>
+	<hr>
+	<p>Hi, I'm Reuty aka not_reuty, and I'm a computer programmer based in the UK. In my spare time I like to program different game mechanics and publish my work in open source repositories like github. I hope some of my projects are useful, both for other programmers learning how to implement different mechanics, and for game designers looking to get a feel for how different mechanic parameters affect the 'feel' of these mechanics in games.</p>
+	<p>If you have questions about any of the projects or want to get in touch, message me through reddit or twitter;
+	<a href="https://reddit.com/u/not_reuty">u/not_reuty</a> or 
+	<a href="https://twitter.com/not_reuty">@not_reuty</a></p>
+
+	<a name="damage"></a>
+	<h2>Damage Lab</h2>
+	<hr>
+	<div class="links">
+		<a href="https://github.com/not-reuty/damage_lab">
+			<i class="fa fa-github-square" style="font-size:36px; color: #24292e"></i>
+		</a>
+
+		<a href="https://www.reddit.com/r/gamedev/comments/hs8bwr/i_made_an_open_source_project_for_testing/">
+			<i class="fa fa-reddit-square" style="font-size:36px; color: #ff4500"></i>
+		</a>
+
+		<a href="https://twitter.com/not_reuty/status/1283730026601603073">
+			<i class="fa fa-twitter-square" style="font-size:36px; color: #1da1f2"></i>
+		</a>
 
 
-  <h2>Damage Lab</h2>
-  <hr>
-  <div class="links">
-	  <i class="fa fa-github-square" style="font-size:36px; color: #24292e"></i>
+		<a href="https://twitter.com/not_reuty/status/1283730026601603073">
+			<i class="fa fa-play-circle" style="font-size:36px; color: #1da1f2"></i>
+		</a>		
 
-	  <i class="fa fa-reddit-square" style="font-size:36px; color: #ff4500"></i>
+	</div>
 
-	  <i class="fa fa-twitter-square" style="font-size:36px; color: #1da1f2"></i>
-  </div>
-  <p>This project is all about how damage mechanics work, and how status effects can be applied to enemies, and how they can interact. This project was created using the Godot Engine and is written in GDScript.</p>
-  <img src="images/all.gif">
-  <p>The github repository readme file contains descriptions of each of the effects that can be applied, and a quick overview of how the user interface interacts with the game objects, and how the project is structured.</p>
+	<p>This project is all about how damage mechanics work, how status effects can be applied to enemies, and how they can interact. This project was created using the Godot Engine and is written in GDScript.</p>
+	<img src="images/all.gif">
+	<p>The github repository readme file contains descriptions of each of the effects that can be applied, and a quick overview of how the user interface interacts with the game objects, and how the project is structured.</p>
 
 
-  <h2>Health Lab</h2>
-  <hr>
-  <p></p>
+	<a name="health"></a>
+	<h2>Health Lab</h2>
+	<hr>
+	<p></p>
 
 </div>
 
